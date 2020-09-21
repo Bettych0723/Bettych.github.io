@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日本旅遊指南</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    .box {
+      width: 100%;
+      height: 400px;
+      background-color: grey;
+    }
+
+    p {
+      line-height: 28px;
+    }
+
+    h3{
+      padding-bottom: 10px;
+    }
+
+    .footer p{
+      color: gray;
+    }
+
+    .carousel-caption {
+      padding-bottom: 60px;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">日本旅遊指南</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner ">
+        <div class="carousel-item active ">
+          <img src="./輪播1.jpg" class="d-block "alt="...">
+          <div class="carousel-caption text-left">
+            <h1>GO！GO！大阪！</h1>
+            <p>大阪是日本第二大港口，匯聚多元日本景點，也是日本東西之間的交通樞紐，更是日本旅遊數一數二多旅客的城市，熱門大阪景點絕不能錯過。</p>
+            <button type="button" class="btn btn-primary">進一步了解  >></button>
+          </div>
+          
+        </div>
+        <div class="carousel-item">
+          <img src="./輪播2.jpg" class="d-block" alt="...">
+          <div class="carousel-caption ">
+            <h1>GO！GO！京都！</h1>
+            <p>到日本自由行就想一睹日本特有的風俗與生活美學，這些日本景點全在京都這個千年古都流傳了下來，神社寺院、和服舞妓穿梭的小徑、嵐山竹林等京都日本景點每年吸引了超過千萬旅客，其中透過日本自由行前來的旅客更不在少數。</p>
+            <button type="button" class="btn btn-primary">進一步了解  >></button>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./輪播3.jpg" class="d-block" alt="...">
+          <div class="carousel-caption  text-right ">
+            <h1>GO！GO！東京！</h1>
+            <p>東京是個在日本自由行中值得深入挖掘的豐富城市，擁有從早到晚都能逛的各式日本景點！無論日本自由行到東京想要探訪日式文化，參訪明治神宮、淺草寺；或是到準備大肆採購，從年輕的澀谷、表參道逛到貴婦必來的銀座與六本木，豐富的東京景點可以讓你通通滿足！</p>
+            <button type="button" class="btn btn-primary">進一步了解  >></button>
+          </div>
+        </div>
+      </div>
+      
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </main>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 my-3">
+        <div class="card border-0 " style="width: 100%;">
+          <img src="./大阪.jpg" class="card-img-top rounded-circle w-50 mx-auto" alt="...">
+          <div class="card-body d-flex justify-content-center flex-wrap">
+            <h4 class="card-title text-center">大阪</h4>
+            <p class="card-text text-center">
+              大阪坐落於本州島西南面的大阪灣畔，是日本僅次於東京的第二大城市，大阪亦為關西地區的工商業和水陸空交通中心。遠古時期大阪被稱為浪速、浪華或難波，因瀕臨瀨戶內海，自古以來便是古都奈良和京都的重要門戶。
+            </p>
+            <a href="#" class="btn btn-danger ">Read more >></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-3">
+        <div class="card border-0 " style="width: 100%;">
+          <img src="./京都.jpg" class="card-img-top rounded-circle w-50 mx-auto" alt="...">
+          <div class="card-body d-flex justify-content-center flex-wrap">
+            <h4 class="card-title text-center">京都</h4>
+            <p class="card-text text-center">
+              京都（Kyoto）位於日本列島中心的關西地區。在西元794年當時是仿效中國隋唐時期的洛陽城和長安城所建，歷經大政奉還直至1868年遷都東京為止，京都一直是日本的首都，人口約150萬。</p>
+            <a href="#" class="btn btn-danger ">Read more >></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 my-3">
+        <div class="card border-0 " style="width: 100%;">
+          <img src="./沖繩本島.jpg" class="card-img-top rounded-circle w-50 mx-auto" alt="...">
+          <div class="card-body d-flex justify-content-center flex-wrap">
+            <h4 class="card-title text-center">沖繩本島</h4>
+            <p class="card-text text-center">
+              沖繩本島主要由隆起的珊瑚礁所形成，地勢較平坦，而北部的地形是由火成岩構成，南部多為石灰岩地形，長年以來形成許鐘乳石洞。沖繩島在15世紀成立琉球王國前分為北山、中山和南山三個小國，其後合併統一為琉球王國。</p>
+            <a href="#" class="btn btn-danger">Read more >></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="row align-items-center">
+      <div class="col-12 col-md-7" data-aos="fade-up"
+      data-aos-duration="1000">
+        <h3>交通</h3>
+        <p>日本交通以公路、鐵路、航空和水路為主，首都東京是日本的公路、鐵路、水路及航空總樞紐，以及重要的航空轉口港和港口。日本的高速公路收費和徵稅都較其他國 家高，但同時亦在公路維修和保養方面投放不少資源，節能方面也屬世界領先。
+          由於日本是個島嶼國家，島與島之間有渡輪連接，城市之間也有高速公路和新幹線相連，市內自行車、摩托車、汽車等各種交通工具均被大規模應用。</p>
+      </div>
+      <div class="col-12 col-md-5">
+        <img src="./交通500.jpg" class="w-100 my-5 " alt=""></div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="row align-items-center">
+      <div class="col-12 col-md-5 order-1 order-md-0">
+        <img src="./a0000256_main-1.jpg" class="w-100 my-5" alt=""></div>
+      
+
+      <div class="col-12 col-md-7" data-aos="fade-up"
+      data-aos-duration="1000">
+        <h3>天氣</h3>
+        <p>日本位處溫帶氣候帶因此四季分明，全年各季節的天氣氣候也分別存在著相異的特徵，像是冬天氣溫可低至零下，夏天則常突破30度，同時也因為濕度相較於台灣低，因此即使是溫度計上的溫度一樣，台灣與日本的體感溫度也會有不小的落差。</p>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="row align-items-center">
+      <div class="col-12 col-md-7"data-aos="fade-up"
+      data-aos-duration="1000">
+        <h3>美食</h3>
+        <p>從日本的國民料理拉麵、咖哩飯，到天婦羅、壽司等精緻的和食料理，日本料理幾乎已經滲透全世界，如此橫跨國界的日本美食，從傳統到創新，經過時代的變遷與融合，讓不少美食饕客不惜跨海來到日本，就為了品嘗日本料理。</p>
+      </div>
+      <div class="col-12 col-md-5">
+        <img src="./日本美食.jpg" class="w-100 my-5" alt="">
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+  </div>
+  <footer>
+    <div class="footer container mb-5">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>© 2017-2018 Company, Inc. · 
+        <a href="#">Privacy</a> ·
+        <a href="#">Terms</a>
+      </p>
+
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+
+</body>
+
+</html>
